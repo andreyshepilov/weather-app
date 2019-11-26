@@ -1,0 +1,8 @@
+.route-animated-wrapper {
+  position: relative;
+}
+
+.route-animated-wrapper > div {
+  position: absolute;
+  width: 100%;
+}

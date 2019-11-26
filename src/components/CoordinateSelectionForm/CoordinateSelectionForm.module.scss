@@ -1,0 +1,37 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/buttons';
+@import 'stylesCommon/components/cards';
+@import 'stylesCommon/components/formElements';
+
+.rootWrapper {
+  @extend %cardBase;
+
+  padding: $spacer-M;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex: 1 0 auto;
+  margin: 0 $spacer-M 0 0;
+
+  input {
+    @extend %textInputBase;
+
+    margin: 0 $spacer-M 0 0;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 $spacer-M 0 0;
+  }
+}
+
+.submitButton {
+  @extend %button-common;
+
+  flex: 0 0 auto;
+}

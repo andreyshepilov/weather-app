@@ -1,0 +1,25 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/buttons';
+@import 'stylesCommon/components/cards';
+
+.rootWrapper {
+  @extend %cardBase;
+
+  padding: $spacer-M;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.autocompleteWrapper {
+  flex: 1 0 auto;
+  margin: 0 $spacer-M 0 0;
+  color: $clr-black;
+}
+
+.submitButton {
+  @extend %button-common;
+
+  flex: 0 0 auto;
+}

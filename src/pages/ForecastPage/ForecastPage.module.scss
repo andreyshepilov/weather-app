@@ -1,0 +1,34 @@
+@import 'stylesCommon/global';
+
+.rootWrapper {
+  padding: $spacer-M 0;
+}
+
+.locationCurrentWeatherSection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 $spacer-L;
+}
+
+.forecastedWeatherSection {
+  margin: 0 0 $spacer-L;
+}
+
+.dayDetailsSection {
+  margin: 0 0 $spacer-L;
+}
+
+.hourDetailsSection {
+  margin: 0 0 $spacer-L;
+}
+
+.locationInfoWrapper {
+  flex: 0 0 auto;
+  margin: 0 $spacer-M 0 0;
+}
+
+.currentWeatherWrapper {
+  flex: 1 0 auto;
+}

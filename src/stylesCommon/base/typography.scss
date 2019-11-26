@@ -1,0 +1,101 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
+  font-weight: bold;
+  margin: 0 0 0.5em;
+  color: $clr-headings-base;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: $h1-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h1-font-size-lg;
+  }
+}
+
+h2 {
+  font-size: $h2-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h2-font-size-lg;
+  }
+}
+
+h3 {
+  font-size: $h3-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h3-font-size-lg;
+  }
+}
+
+h4 {
+  font-size: $h4-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h4-font-size-lg;
+  }
+}
+
+h5 {
+  font-size: $h5-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h5-font-size-lg;
+  }
+}
+
+h6 {
+  font-size: $h6-font-size;
+
+  @include media('>=desktop') {
+    font-size: $h6-font-size-lg;
+  }
+}
+
+p {
+  margin: 0 0 1em;
+  line-height: 22px;
+  font-size: $font-size-base;
+  color: $clr-partition-base;
+}
+
+a {
+  color: $clr-link-base;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+  font-size: $font-size-base;
+  line-height: 22px;
+  color: $clr-list-base;
+}
+
+ol {
+  margin: 0;
+  padding: 0;
+  margin-left: 14px;
+  font-size: $font-size-base;
+  line-height: 22px;
+  color: $clr-list-base;
+}
+
+li {
+  color: $clr-list-item-base;
+  margin-bottom: 12px;
+}

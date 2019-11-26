@@ -1,0 +1,26 @@
+module.exports = {
+  plugins: ['stylelint-scss', 'stylelint-prettier'],
+  extends: 'stylelint-config-standard',
+  rules: {
+    'prettier/prettier': true,
+    'no-descending-specificity': null,
+    'declaration-colon-newline-after': null,
+    'at-rule-no-unknown': null,
+    'scss/at-rule-no-unknown': true,
+    'number-leading-zero': null,
+    'value-list-comma-newline-after': null,
+    'selector-pseudo-element-colon-notation': 'single',
+    'unit-whitelist': [
+      'em',
+      'rem',
+      's',
+      'px',
+      '%',
+      'vh',
+      'vw',
+      'dpi',
+      'deg',
+      'fr',
+    ],
+  },
+};

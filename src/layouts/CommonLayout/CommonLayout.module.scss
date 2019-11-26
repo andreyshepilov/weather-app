@@ -1,0 +1,25 @@
+@import 'stylesCommon/global';
+
+.page {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  @extend %clearfix;
+
+  margin-right: auto;
+  margin-left: auto;
+  max-width: $page-max-width;
+  padding: 0 $container-gutter;
+  width: 100%;
+}
+
+.mainContentWrapper {
+  backdrop-filter: blur(5px);
+  flex: 1 0 auto;
+}

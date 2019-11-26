@@ -1,0 +1,63 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/buttons';
+@import 'stylesCommon/components/cards';
+
+.rootWrapper {
+  @extend %cardBlackSmall;
+  @extend %cardBlackSmallActive;
+
+  padding: $spacer-M;
+}
+
+.heading {
+  margin: 0 0 $spacer-M;
+}
+
+.weatherConditionSection {
+  text-align: center;
+  text-align: left;
+  margin: 0 0 $spacer-M;
+}
+
+.weatherConditionIconWrapper {
+  display: inline-block;
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+.paramsList {
+  margin: 0 0 $spacer-M;
+  padding: 0;
+  list-style: none;
+}
+
+.paramsItem {
+  margin: 0 0 3px;
+}
+
+.infoLogo {
+  width: 20px;
+  height: auto;
+  margin-right: $spacer-S;
+}
+
+.cardListWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 #{-$spacer-S} $spacer-M;
+}
+
+.threeHourCardWrapper {
+  flex: 0 0 auto;
+  margin: 0 $spacer-S $spacer-S;
+  min-width: 190px;
+}
+
+.closeButton {
+  @extend %button-common;
+}

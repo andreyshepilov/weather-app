@@ -1,0 +1,65 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/buttons';
+@import 'stylesCommon/components/cards';
+
+.rootWrapper {
+  @extend %cardBlackSmall;
+}
+
+.rootWrapperOpened {
+  @extend %cardBlackSmallActive;
+}
+
+.tempWeatherWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0 0 $spacer-S;
+}
+
+.temperatureSection {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.temperatureMinMax {
+  flex: 0 0 auto;
+  font-size: 9px;
+  color: $clr-white;
+}
+
+.temperatureMain {
+  flex: 0 0 auto;
+  font-size: 20px;
+  color: $clr-white;
+  margin: 0 10px 0 0;
+  font-weight: bold;
+}
+
+.weatherConditionSection {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherConditionIconWrapper {
+  flex: 0 0 auto;
+  width: 50px;
+  height: auto;
+}
+
+.weatherConditionDescription {
+  flex: 0 0 auto;
+  text-transform: capitalize;
+}
+
+.showMoreButton {
+  @extend %button-common;
+}

@@ -1,0 +1,22 @@
+@import 'stylesCommon/components/cards';
+
+.rootWrapper {
+  @extend %cardBase;
+
+  height: 100%;
+}
+
+.cardListWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  margin: 0 #{-$spacer-M};
+}
+
+.dayCardWrapper {
+  flex: 1 0 200px;
+  overflow: hidden;
+  margin: 0 $spacer-M $spacer-M;
+}

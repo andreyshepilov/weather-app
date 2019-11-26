@@ -1,0 +1,85 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/buttons';
+
+.rootWrapper {
+  height: 50px;
+  padding: $spacer-S 0;
+}
+
+.logo {
+  font-size: 24px;
+  width: 200px;
+  letter-spacing: -1px;
+  font-weight: 800;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.half {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  left: -32px;
+}
+
+.left {
+  animation: showup 2s;
+  margin-right: 5px;
+}
+
+.right {
+  animation: reveal 1s;
+}
+
+.right span {
+  animation: slidein 1s;
+}
+
+@keyframes showup {
+  0% {
+    opacity: 0;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0;
+    width: 0;
+  }
+
+  20% {
+    opacity: 1;
+    width: 0;
+  }
+
+  100% {
+    opacity: 1;
+    width: 100;
+  }
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: -1000px;
+  }
+
+  20% {
+    margin-left: -1000px;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}

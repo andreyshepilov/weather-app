@@ -1,0 +1,146 @@
+//****************************************
+//   Variables
+//****************************************
+
+// 1 - Color
+// 2 - Font
+// 3 - Grid and wrapper
+// 4 - Spacing
+// 5 - Breakpoints
+// 6 - Transitions
+
+// ---------------------------------------
+// 1 - Color
+// ---------------------------------------
+
+$clr-black: #000;
+$clr-white: #fff;
+
+$clr-1: #00adb5;
+$clr-2: #2dffe3;
+$clr-3: #00748e;
+$clr-4: ​#04598e;
+$clr-5: #04599e;
+
+$clr-body-bg: #32799a;
+$clr-body-color: $clr-white;
+
+// ---------------------------------------
+// 2 - Font
+// ---------------------------------------
+
+$font-family-base: 'Roboto', sans-serif;
+$font-family-alternate: 'Roboto', sans-serif;
+
+$font-weight-bold: bold;
+$font-weight-regular: 400;
+$font-weight-thin: 100;
+
+$font-weight-base: $font-weight-regular;
+
+$font-size-XXL: 40px;
+$font-size-XL: 28px;
+$font-size-L: 20px;
+$font-size-M: 16px;
+$font-size-S: 14px;
+$font-size-XS: 12px;
+$font-size-XXS: 10px;
+
+$font-size-base: $font-size-S;
+
+$line-height-L: 1.625;
+$line-height-M: 1.572;
+$line-height-S: 1.25;
+$line-height-XS: 1;
+
+$line-height-base: $line-height-S;
+
+// ---------------------------------------
+// 3 - Grid and wrapper
+// ---------------------------------------
+
+$page-min-width: 320px;
+$page-max-width: 1210px;
+$columns-gutter: 20px;
+$container-gutter: 20px;
+
+// ---------------------------------------
+// 4 - Spacing
+// ---------------------------------------
+
+$spacer-N: 0;
+$spacer-S: 10px;
+$spacer-M: 20px;
+$spacer-L: 40px;
+$spacer-XL: 80px;
+
+// ---------------------------------------
+// 5 - Breakpoints
+// ---------------------------------------
+
+$breakpoints: (
+  'widescreen': 1200px,
+  'desktop': 1024px,
+  'desktop-xs': 960px,
+  'tablet': 768px,
+  'phone': 480px,
+  'phone-xs': 320px,
+);
+
+// ---------------------------------------
+// 6 - Transitions
+// ---------------------------------------
+
+$animation-speed: 0.3s;
+$transition: all $animation-speed ease-in-out;
+
+// ---------------------------------------
+// 7 - Buttons
+// ---------------------------------------
+
+$base-element-padding: 0.4em 0.7em;
+
+$btn-color: #fff;
+$btn-bg-color: #000;
+$btn-padding: $base-element-padding;
+$btn-font-size: inherit;
+
+// ---------------------------------------
+// 8 - Forms
+// ---------------------------------------
+
+$form-element-padding: $base-element-padding;
+$form-element-border-color: gray;
+$form-element-border-focus-color: #000;
+$form-placeholder-color: gray;
+
+// ---------------------------------------
+// 9 - Typography
+// ---------------------------------------
+
+$clr-link-base: $clr-2;
+$clr-partition-base: $clr-body-color;
+$clr-list-base: $clr-body-color;
+$clr-list-item-base: $clr-body-color;
+$vertical-rhythm: ($line-height-base * 1em); // TODO
+
+// ---------------------------------------
+// 10 - Headings
+// ---------------------------------------
+
+$h1-font-size: 30px;
+$h2-font-size: 27px;
+$h3-font-size: 24px;
+$h4-font-size: 18px;
+$h5-font-size: 15px;
+$h6-font-size: 13px;
+
+$h1-font-size-lg: 35px;
+$h2-font-size-lg: 32px;
+$h3-font-size-lg: 29px;
+$h4-font-size-lg: 23px;
+$h5-font-size-lg: 20px;
+$h6-font-size-lg: 18px;
+
+$headings-font-family: $font-family-base;
+$clr-headings-base: $clr-body-color;

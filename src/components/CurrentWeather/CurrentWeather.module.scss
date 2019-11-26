@@ -1,0 +1,104 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/cards';
+@import 'stylesCommon/components/buttons';
+
+.rootWrapper {
+  @extend %cardBase;
+
+  height: 100%;
+}
+
+.pageHeading {
+  margin: 0 0 $spacer-L;
+}
+
+.tempWeatherWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  margin: 0 0 $spacer-M;
+}
+
+.temperatureSection {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin: 0 $spacer-M 0 0;
+}
+
+.temperatureMinMax {
+  flex: 0 0 auto;
+  font-size: 14px;
+  color: inherit;
+}
+
+.temperatureMain {
+  flex: 0 0 auto;
+  font-size: 35px;
+  color: inherit;
+  margin: 0 $spacer-S 0 0;
+  font-weight: bold;
+}
+
+.weatherConditionSection {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.weatherConditionIconWrapper {
+  flex: 0 0 auto;
+
+  img {
+    width: 50px;
+    height: auto;
+  }
+}
+
+.weatherConditionDescription {
+  flex: 0 0 auto;
+  text-transform: capitalize;
+}
+
+.showMoreButton {
+  @extend %button-animated-margin;
+
+  margin: 0 0 $spacer-N;
+}
+
+.showMoreButtonOpenedState {
+  margin: 0 0 $spacer-M;
+}
+
+.otherParamsList {
+  max-height: 0;
+  transition: max-height $animation-speed;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.otherParamsListOpened {
+  max-height: 600px;
+}
+
+.otherParamsItem {
+  margin: 0 0 3px;
+}
+
+.infoLogo {
+  width: 20px;
+  height: auto;
+  margin-right: $spacer-S;
+}
+
+.infoText {
+  vertical-align: middle;
+}

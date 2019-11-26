@@ -1,0 +1,22 @@
+@import 'stylesCommon/global';
+@import 'stylesCommon/components/cards';
+@import 'stylesCommon/components/buttons';
+
+.rootWrapper {
+  @extend %cardBase;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.topWrapper {
+  flex: 0 0 auto;
+}
+
+.backButton {
+  @extend %button-common;
+
+  flex: 0 0 auto;
+}
