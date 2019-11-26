@@ -1,6 +1,6 @@
 {
   "name": "weather-app",
-  "homepage": "http://andreyshepilov.github.io/weather-app/select-location",
+  "homepage": "http://andreyshepilov.github.io/weather-app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
