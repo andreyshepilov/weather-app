@@ -10,12 +10,21 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include media('<=tablet') {
+    flex-direction: column;
+  }
 }
 
 .autocompleteWrapper {
   flex: 1 0 auto;
   margin: 0 $spacer-M 0 0;
   color: $clr-black;
+
+  @include media('<=tablet') {
+    margin-right: 0;
+    margin-bottom: $spacer-M;
+  }
 }
 
 .submitButton {

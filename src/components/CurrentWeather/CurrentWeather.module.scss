@@ -70,6 +70,10 @@
   @extend %button-animated-margin;
 
   margin: 0 0 $spacer-N;
+
+  @include media('<=phone') {
+    width: 100%;
+  }
 }
 
 .showMoreButtonOpenedState {

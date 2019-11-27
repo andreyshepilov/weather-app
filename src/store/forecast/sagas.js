@@ -78,7 +78,7 @@ export function* getForecastedWeather(action) {
     if (daysSets.hasOwnProperty(key)) {
       const objectifiedDaySet = {};
       const hourDataSequence = [];
-      daysSets[key].map(el => {
+      daysSets[key].forEach(el => {
         objectifiedDaySet[el.dt] = el;
         hourDataSequence.push(el.dt);
       });

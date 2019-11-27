@@ -9,10 +9,16 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
+
+  @include media('<=phone') {
+    align-items: initial;
+  }
 }
 
 .topWrapper {
   flex: 0 0 auto;
+  margin: 0 0 $spacer-M;
 }
 
 .backButton {

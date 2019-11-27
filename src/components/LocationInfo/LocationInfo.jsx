@@ -34,14 +34,14 @@ function LocationInfo() {
     <div className={styles.rootWrapper}>
       <div className={styles.topWrapper}>
         <h5>Your location:</h5>
-        <div>Lat: {selectedLocation.lat}</div>
-        <div>Lon: {selectedLocation.lat}</div>
+        <div>Lat: <b>{selectedLocation.lat}</b></div>
+        <div>Lon: <b>{selectedLocation.lat}</b></div>
         {cityNameFromCurrent || cityNameFromForecasted ? (
-          <div>City: {cityNameFromCurrent || cityNameFromForecasted}</div>
+          <div>City: <b>{cityNameFromCurrent || cityNameFromForecasted}</b></div>
         ) : null}
         {countryCodeFromCurrent || countryCodeFromForecasted ? (
           <div>
-            Country: {countryCodeFromCurrent || countryCodeFromForecasted}
+            Country: <b>{countryCodeFromCurrent || countryCodeFromForecasted}</b>
           </div>
         ) : null}
       </div>

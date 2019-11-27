@@ -11,22 +11,54 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @include media('<=tablet') {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form {
   flex: 1 0 auto;
   margin: 0 $spacer-M 0 0;
 
+  @include media('<=tablet') {
+    margin-right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $spacer-M;
+    max-width: 400px;
+    width: 100%;
+  }
+
   input {
     @extend %textInputBase;
 
     margin: 0 $spacer-M 0 0;
+
+    @include media('<=tablet') {
+      margin-right: 0;
+      margin-bottom: $spacer-M;
+      width: 100%;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
   }
 
   label {
     font-weight: bold;
     font-size: 20px;
     margin: 0 $spacer-M 0 0;
+
+    @include media('<=tablet') {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: $spacer-S;
+    }
   }
 }
 
@@ -34,4 +66,9 @@
   @extend %button-common;
 
   flex: 0 0 auto;
+
+  @include media('<=tablet') {
+    max-width: 400px;
+    width: 100%;
+  }
 }

@@ -52,7 +52,7 @@ function CoordinateSelectionForm() {
           type='number'
           id='lat'
           name='lat'
-          placeholder='lat'
+          placeholder='Latitude'
           min='-90'
           max='90'
           onChange={onChange}
@@ -62,7 +62,7 @@ function CoordinateSelectionForm() {
           type='number'
           id='lon'
           name='lon'
-          placeholder='lon'
+          placeholder='Longitude'
           min='-180'
           max='180'
           onChange={onChange}

@@ -13,22 +13,32 @@
 }
 
 .forecastedWeatherSection {
-  margin: 0 0 $spacer-L;
+  margin: 0 0 $spacer-M;
 }
 
 .dayDetailsSection {
-  margin: 0 0 $spacer-L;
+  margin: 0 0 $spacer-M;
 }
 
 .hourDetailsSection {
-  margin: 0 0 $spacer-L;
+  margin: 0 0 $spacer-M;
 }
 
 .locationInfoWrapper {
   flex: 0 0 auto;
   margin: 0 $spacer-M 0 0;
+
+  @include media('<=tablet') {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: $spacer-M;
+  }
 }
 
 .currentWeatherWrapper {
   flex: 1 0 auto;
+
+  @include media('<=tablet') {
+    flex: 0 0 100%;
+  }
 }

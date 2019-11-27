@@ -15,7 +15,7 @@
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin: 0 0 $spacer-S;
+  margin: 0 0 $spacer-M;
 }
 
 .temperatureSection {
@@ -62,4 +62,8 @@
 
 .showMoreButton {
   @extend %button-common;
+
+  @include media('<=phone') {
+    width: 100%;
+  }
 }

@@ -3,12 +3,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import classNames from 'classnames';
 import moment from 'moment';
 import { get } from 'lodash';
+import PropTypes from 'prop-types';
 
 import * as forecastActions from 'store/forecast/actions';
 
 import cloudLogo from 'assets/icons/cloud-1.svg';
 
 import styles from './ThreeHourCard.module.scss';
+
+ThreeHourCard.propTypes = {
+  cardId: PropTypes.number.isRequired,
+};
 
 function ThreeHourCard({ cardId }) {
   const dispatch = useDispatch();
@@ -33,7 +38,7 @@ function ThreeHourCard({ cardId }) {
 
   useEffect(() => {
     selectedHourId === cardId ? setIsActive(true) : setIsActive(false);
-  }, [selectedHourId]);
+  }, [selectedHourId, cardId]);
 
   const forecastTime = moment
     .unix(get(thisHourData, 'dt', ''))

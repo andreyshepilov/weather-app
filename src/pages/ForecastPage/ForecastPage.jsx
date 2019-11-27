@@ -37,7 +37,7 @@ function ForecastPage() {
   useEffect(() => {
     if (!dataIsLoaded && !currentWeatherLoading && !forecastedWeather)
       history.push(`/${ROUTES.REDIRECT_URL}`);
-  }, []);
+  }, [dataIsLoaded, currentWeatherLoading, forecastedWeather]);
 
   return (
     <CommonLayout>

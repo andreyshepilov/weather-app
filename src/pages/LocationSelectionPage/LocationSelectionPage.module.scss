@@ -16,6 +16,11 @@
   position: relative;
   min-height: 200px;
   z-index: 1;
+
+  @include media('<=tablet') {
+    min-height: 300px;
+    margin-bottom: $spacer-M;
+  }
 }
 
 .formsWrapperAutocompleteActive {

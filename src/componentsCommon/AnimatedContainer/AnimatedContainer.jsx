@@ -1,6 +1,12 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import './styles.css';
+
+AnimatedContainer.propTypes = {
+  show: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+};
 
 function AnimatedContainer({ show, children }) {
   const [render, setRender] = useState(show);
@@ -16,7 +22,7 @@ function AnimatedContainer({ show, children }) {
   return (
     render && (
       <div
-        style={{ animation: `${show ? 'fadeIn' : 'fadeOut'} 1s` }}
+        style={{ animation: `${show ? 'fadeIn' : 'fadeOut'} 0.3s`, }}
         onAnimationEnd={onAnimationEnd}
       >
         {children}

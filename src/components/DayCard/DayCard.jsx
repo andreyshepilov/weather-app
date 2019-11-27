@@ -3,12 +3,17 @@ import { useDispatch, useSelector } from 'react-redux';
 import moment from 'moment';
 import classNames from 'classnames';
 import { get } from 'lodash';
+import PropTypes from 'prop-types';
 
 import * as forecastActions from 'store/forecast/actions';
 
 import cloudLogo from 'assets/icons/cloud-1.svg';
 
 import styles from './DayCard.module.scss';
+
+DayCard.propTypes = {
+  cardId: PropTypes.string.isRequired,
+};
 
 function DayCard({ cardId }) {
   const dispatch = useDispatch();
@@ -23,7 +28,7 @@ function DayCard({ cardId }) {
 
   useEffect(() => {
     selectedDayId === cardId ? setIsActive(true) : setIsActive(false);
-  }, [selectedDayId]);
+  }, [selectedDayId, cardId]);
 
   const dayData = useSelector(state =>
     get(state, `forecast.forecastedWeather.data[${cardId}]`, '')

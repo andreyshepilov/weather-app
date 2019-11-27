@@ -69,4 +69,8 @@
 
 .showMoreButton {
   @extend %button-common;
+
+  @include media('<=phone') {
+    width: 100%;
+  }
 }
