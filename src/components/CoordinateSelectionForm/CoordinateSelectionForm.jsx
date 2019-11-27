@@ -17,8 +17,6 @@ function CoordinateSelectionForm() {
     lon: 0,
   });
 
-  const [isEmpty, setIsEmpty] = useState(true);
-
   const onChange = e => {
     setLocation({
       ...location,
