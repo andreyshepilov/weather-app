@@ -17,6 +17,8 @@ function CoordinateSelectionForm() {
     lon: 0,
   });
 
+  const [isEmpty, setIsEmpty] = useState(true);
+
   const onChange = e => {
     setLocation({
       ...location,
@@ -68,7 +70,12 @@ function CoordinateSelectionForm() {
           onChange={onChange}
         />
       </form>
-      <button type='button' onClick={onSubmit} className={styles.submitButton}>
+      <button
+        type='button'
+        onClick={onSubmit}
+        className={styles.submitButton}
+        disabled={!(location.lat && location.lon)}
+      >
         Submit
       </button>
     </div>

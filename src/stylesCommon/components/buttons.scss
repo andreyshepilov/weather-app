@@ -19,6 +19,10 @@
   &:focus {
     outline: $clr-3 solid 2px;
   }
+
+  &:disabled {
+    background: $clr-6;
+  }
 }
 
 %button-animated-margin {

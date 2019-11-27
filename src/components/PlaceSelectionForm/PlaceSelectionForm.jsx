@@ -18,6 +18,8 @@ function PlaceSelectionForm() {
     lon: 0,
   });
 
+  const [isEmpty, setIsEmpty] = useState(true);
+
   const onSubmit = () => {
     dispatch(
       forecastActions.setSelectedLocation({
@@ -40,14 +42,17 @@ function PlaceSelectionForm() {
             type: 'city',
           }}
           onChange={({ query, rawAnswer, suggestion, suggestionIndex }) => {
+            if (suggestion) setIsEmpty(false);
             setLocation({
               lat: get(suggestion, 'latlng.lat', 0),
               lon: get(suggestion, 'latlng.lng', 0),
             });
           }}
+          onClear={() => setIsEmpty(true)}
         />
       </div>
       <button
+        disabled={isEmpty}
         type='button'
         name='Submit'
         onClick={onSubmit}
